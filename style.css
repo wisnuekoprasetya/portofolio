@@ -1,0 +1,248 @@
+/*style body*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+}
+body {
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  font-size: 3vh;
+}
+h2 {
+  font-family: Poppins;
+  background: white;
+  text-align: center;
+  padding: 12rem 0 1.5rem 0;
+  font-size: 8vh;
+}
+/*navigasi menu*/
+#navigasi {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.164);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding: 2rem 0rem 0.1rem 0rem;
+}
+.dekstop {
+  align-items: center;
+  display: flex;
+  gap: 20%;
+  justify-content: space-around;
+}
+.nav-bar {
+  display: flex;
+  gap: 3vh;
+  list-style: none;
+}
+.logo {
+  font-size: 6vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 3vh;
+}
+a:hover {
+  color: rgb(139, 138, 138);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: rgb(97, 95, 95);
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/*prifile*/
+#profile {
+  margin-top: 1vh;
+  padding: 10vh 0 5vh 0;
+  display: flex;
+  justify-content: center;
+  gap: 5vh;
+  font-size: 3vh;
+}
+
+.pas-foto {
+  border-radius: 20%;
+  height: 50vh;
+}
+
+.section-text-p1 {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 3vh;
+  text-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+.section-text-p1 h1 {
+  font-family: "Raleway", sans-serif;
+}
+.section-text-p1 p {
+  font-family: "Poppins", sans-serif;
+}
+.btn-cv,
+.btn-sertifikat {
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.btn-cv,
+.btn-sertifikat,
+.jbds {
+  margin-top: 2rem;
+  width: 12rem;
+  transition: all 300ms ease;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+  gap: 3rem;
+  background: black;
+  border: rgb(52, 52, 52) 0.1rem solid;
+}
+
+.btn-cv:hover,
+.btn-sertifikat:hover,
+.jbds:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 254, 254);
+  font-weight: bold;
+  font-size: (+2%);
+  border-color: black;
+  box-shadow: 0 8px 0px -3px rgba(0, 0, 0, 0.2);
+}
+
+/*WIFE*/
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: rgb(255, 255, 255);
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* /* Shrinking for mobile */
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/*HERO-PRIFULE*/
+#hero {
+  display: flex;
+  background: #ffffff;
+  justify-content: center;
+  padding: 3vh 20vh 0 20vh;
+  gap: 3vh;
+}
+#hero .foto-bio {
+  text-align: center;
+  flex: 1 1 30rem;
+  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+}
+.foto-bio img {
+  width: 100%;
+  border-radius: 1vh;
+}
+.biodata {
+  padding: 3vh 2vh;
+  flex: 1 1 60rem;
+}
+
+/*Footer*/
+footer .media {
+  text-align: center;
+}
+.media img {
+  height: 3rem;
+  padding: 0vh 1vh 0.5vh 1vh;
+}
+
+footer .credit {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 0 2rem 0;
+}
